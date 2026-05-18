@@ -5,3 +5,8 @@ compatibility_date = "2024-04-01"
 [[durable_objects.bindings]]
 name = "FALKOR_AGENT"
 class_name = "FalkorAgent"
+
+[env.production]
+durable_objects.bindings = [
+  { name = "FALKOR_AGENT", class_name = "FalkorAgent" }
+]
